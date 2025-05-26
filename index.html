@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Chat App</h1>
+        
+        <!-- Login/Signup Form -->
+        <div id="auth-container">
+            <div id="login-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button id="login-btn">Login</button>
+                <button id="show-signup-btn">Need an account? Sign Up</button>
+            </div>
+            
+            <div id="signup-form" class="hidden">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button id="signup-btn">Sign Up</button>
+                <button id="show-login-btn">Already have an account? Login</button>
+            </div>
+        </div>
+        
+        <!-- Chat Interface (shown after login) -->
+        <div id="chat-interface" class="hidden">
+            <button id="logout-btn">Logout</button>
+            <h2>Welcome, <span id="username-display"></span>!</h2>
+            
+            <div id="chat-container"></div>
+            
+            <div class="form-group">
+                <input type="text" id="message-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
